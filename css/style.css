@@ -50,7 +50,9 @@ header h1{
 /*icon nav*/
 
 #navbar{
-    height: 80px;
+    height: 40px;
+    margin-top: 25%;
+    margin-left: 10%;
 }
 
 /* The Overlay (background) */
@@ -105,7 +107,9 @@ header h1{
 /*icon shop*/
 
 #shopify{
-    height: 80px;
+    height: 40px;
+    margin-top: 3%;
+    margin-right: ;
 }
 /*Fin du Header*/
 
@@ -114,8 +118,8 @@ header h1{
 
 #inspiMain{
     width: 408px;
-    background-image: cover;
     border: 3px solid black;
+    width: 100%;
 }
 
 main h1{
@@ -131,7 +135,7 @@ main p{
 
 main img {
   height: 100px;
-  width: 150px;
+  
   border: 2px solid black;
   gap: 11%;
 }
@@ -140,8 +144,8 @@ main img {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
-  
-  
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .image-main1 p{
@@ -154,6 +158,9 @@ main img {
 
 footer{
   background-color: blueviolet;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p{
