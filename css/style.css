@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
 /*Media query*/ 
@@ -24,6 +25,14 @@
     margin: 0;
     padding: 0;
 } 
+
+/*Page Inspiration*/
+
+/*Body Inspiration*/
+
+.B1{
+  background-color: bisque;
+}
 
 /*Début du Header*/ 
 
@@ -47,11 +56,7 @@ header h1{
     font-weight: 700;
 }
 
-/*icon nav*/
 
-#navbar{
-    height: 80px;
-}
 
 /* The Overlay (background) */
 .overlay {
@@ -100,22 +105,29 @@ header h1{
     font-size: 60px;
 }
   
- 
+/*icon nav*/
+
+#navbar{
+  height: 40px;
+  margin-top: 25%;
+  margin-left: 10%;
+}
 
 /*icon shop*/
 
 #shopify{
-    height: 80px;
+    height: 40px;
+    margin-top: 2%;
+    /* margin-right ;*/
 }
 /*Fin du Header*/
 
 
-/* Début du Main*/ 
+/* Début du Main*/ f
 
 #inspiMain{
-    width: 408px;
-    background-image: cover;
-    border: 3px solid black;
+    /* border: 5px solid black; */
+    width: 100%;
 }
 
 main h1{
@@ -130,19 +142,32 @@ main p{
 }
 
 main img {
-  height: 100px;
-  width: 150px;
   border: 2px solid black;
   gap: 11%;
+  width: 9rem;
+  height: 9rem;
 }
 
 .image-main1{
   flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
-  
+  padding-top: 10%;
+  padding-bottom: 10%;
   
 }
+
+/* .image-main1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms;
+}
+
+.image-main1:hover img{
+  transform: scale(2);
+} */
+
 
 .image-main1 p{
   text-align: center;
@@ -154,10 +179,128 @@ main img {
 
 footer{
   background-color: blueviolet;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p{
   text-align: center;
   font-family: 'Oswald';
   font-weight: 400;
+}
+
+
+/* Page Contact*/
+
+
+.B2{
+  background-color: bisque;
+}
+
+
+/* Formulaire*/ 
+
+.C1{
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins';
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Titre Formulaire*/
+
+.C1 h1{
+  font-size: 20px;
+}
+
+/*Trait separation*/
+
+.C1 .separation{
+  width: 100%;
+  height: 1px;
+  background-color: #747cbf;
+}
+
+
+/**/
+
+.C1 .corps-formulaire{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+
+.C1 .corps-formulaire .boite{
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.C1 .corps-formulaire .gauche .boite input{
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cbf;
+  border-radius: 5px;
+}
+
+.C1 .corps-formulaire .gauche .boite i{
+  position: absolute;
+  left: 0;
+  top: 25px;
+  padding: 15px 8px;
+  color: #747cbf;
+}
+
+.C1 .corps-formulaire .droite{
+  margin-left: 40px;
+}
+
+.C1 .corps-formulaire .droite .boite{
+  height: 100%;
+}
+
+.C1 .corps-formulaire .droite .boite textarea{
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #747cbf;
+  outline: none;
+  resize: none;
+  height: 72%;
+  border-radius: 5px;
+}
+
+.C1 .pied-formulaire button{
+  margin-top: 10px;
+  background-color: #747cbf;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.C1 .pied-formulaire button:hover{
+ transform: scale(1.05);
+
+}
+
+@media screen and (max-width:920px) {
+  .C1 .corps-formulaire .droite{
+    margin-left: 0px;
+  }
+  
 }
