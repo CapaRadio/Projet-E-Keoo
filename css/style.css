@@ -38,7 +38,11 @@
 
 header{
     justify-content: space-between;
-    background-color: white;
+    
+}
+
+.firsthead{
+  background-color: bisque;
 }
 
 /*Nav all*/
@@ -52,8 +56,8 @@ header{
 
 header h1{
     text-align: center;
-    font-family: 'Oswald';
-    font-weight: 700;
+    font-family: 'Poppins';
+    font-weight: 900;
 }
 
 
@@ -131,26 +135,45 @@ header h1{
 
 main h1{
   text-align: center;
-  font-family: 'Oswald';
+  font-family: 'Poppins';
+  font-weight: 500;
 }
 
 main p{
-  font-family: 'Oswald';
+  font-family: 'Poppins';
   font-weight: 300;
 }
 
-.imageMain{
-height: 200px;
-width: 730px;
-border: 1px solid black;
+.iMain{
+  width: 100%;
 }
 
-main img {
+
+/* @media (min-width:1100px){
+  .inspi img{
+    width: 500px;
+  }
+} */
+
+
+.imageMain{
+height: 260px;
+width: 100%;
+border: 1px solid black;
+object-fit: cover;
+}
+
+/*Image header */
+
+.inspi img{
   border: 2px solid black;
+  border-radius: 10px;
   gap: 11%;
   width: 300px;
   height: 200px;
 }
+
+/*container image*/
 
 .image-main1{
   flex-wrap: wrap;
@@ -161,9 +184,27 @@ main img {
   
 }
 
+/* titre image*/ 
 
 .image-main1 p{
   text-align: center;
+}
+
+/*Zoom image*/
+
+.container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.container img {
+  transition: transform 0.3s ease;
+}
+
+.container.zoomed img {
+  transform: scale(1.2); 
+  /* Modifiez la valeur du zoom ici */
 }
 
 /*Fin du Main*/
@@ -171,7 +212,7 @@ main img {
 /*Début du Footer*/
 
 footer{
-  background-color: blueviolet;
+  background-color: bisque;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -179,7 +220,7 @@ footer{
 
 footer p{
   text-align: center;
-  font-family: 'Oswald';
+  font-family: 'Poppins';
   font-weight: 400;
 }
 
@@ -187,9 +228,6 @@ footer p{
 /* Page Contact*/
 
 
-.B2{
-  background-color: bisque;
-}
 
 
 /* Formulaire*/ 
@@ -206,6 +244,7 @@ footer p{
   padding: 30px;
   border-radius: 10px;
   border: 1px solid black;
+
 }
 
 /* Titre Formulaire*/
@@ -299,9 +338,40 @@ footer p{
   
 }
 
+
+
+/*Plan*/
+
+.plan{
+ padding-top: 5%;
+
+}
+
+.B2{
+  background: url(../img/plan/plan.jfif);
+}
+
+
+
+
 /* modal  formulaire*/
 
-.modal{
+#modal{
   height: 200px;
   width: 30%;
+  border-radius: 10px;
+  background-color: bisque;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 35%;
+  display:none;
+}
+
+#modal h1{
+  padding-top: 30px;
+}
+
+#exitmodal{
+  background-color: white;
 }
